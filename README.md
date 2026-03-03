@@ -22,6 +22,7 @@ YAML schemas, typed inputs and outputs, chaining metadata, MCP server roadmap.
 - **University lecturers and professors** who received little or no teacher training and want practical, research-grounded support for their teaching
 - **Curriculum designers and heads of learning** building programmes, units, and assessments
 - **School leaders in innovative and alternative education contexts** — international schools, Montessori, project-based, democratic and nature-based schools
+- **Innovators reimagining education** — people building new school models, alternative programmes, and next-generation learning environments. Evidence-based constraints don't limit creative redesign of education; they deepen it.
 - **EdTech developers and AI builders** who need a structured, programmatically accessible education knowledge layer
 - **Education researchers** interested in how evidence translates into AI-mediated practice
 
@@ -31,11 +32,15 @@ YAML schemas, typed inputs and outputs, chaining metadata, MCP server roadmap.
 
 AI is arriving in education fast. Whether it improves learning outcomes or simply scales mediocre practice depends almost entirely on what it is built on.
 
-Most AI education tools are built on convention, habit, and assumption — on what educators have always done, rather than on what the research says actually works. Learning styles. Rigid lesson structures. Wellbeing programmes disconnected from learning theory. As AI scales in education, so does the risk of scaling ineffective practice.
+Most AI education tools are built on convention, habit, and assumption — on what educators have always done, rather than on what the research says actually works. Learning styles. Rigid lesson structures. Wellbeing programmes disconnected from learning theory. As AI expands in education, so does the risk of scaling ineffective practice.
 
 This library exists to build something different: a credible, rigorous foundation for AI in education. One that is anchored in named research, honest about its limitations, and designed especially for the educators working at the frontier — building the next generation of schools, not optimising existing ones.
 
 The potential is real. Personalised, evidence-grounded learning support at a scale that was never previously possible. But only if what is powering it is the actual evidence.
+
+The benefit is not only personalised learning. It is teaching quality and workload. An educator who would otherwise spend hours researching, designing, and second-guessing gets structured, evidence-grounded support in minutes — which means more time for the parts of teaching that only a human can do.
+
+That is one use case. The same library can power school-wide curriculum audits, personalised professional development pathways for teachers, or orchestrated end-of-term assessment reviews. The skills are the foundation. The architecture below describes the layers that make this possible.
 
 ---
 
@@ -73,10 +78,10 @@ Every skill is grounded in named research: specific authors, specific studies, s
 | **Emerging** | Promising research base with limited replication or practitioner translation |
 | **Original** | Practitioner framework; clearly labelled, not claimed as research-backed |
 
-Where original frameworks are included (Domain 14), they are labelled honestly. One honest limitation: the skills encode research-grounded prompts, but the prompts themselves have not been empirically validated as AI interventions. That work is ongoing.
+Where original frameworks are included (Domain 14), they are labelled honestly. One important limitation: the skills encode research-grounded prompts, but the prompts themselves have not been empirically validated as AI interventions. That work is ongoing.
 
-**Built by an educator.**
-This library was built by someone who has spent 20 years designing and teaching in international schools across 27 countries — not by someone who read about teaching. The pedagogical judgements embedded in every prompt, every output structure, and every known-limitations section reflect real classroom and curriculum design experience.
+**Built by an educator with 20 years of international school experience.**
+The pedagogical judgements embedded in every prompt, every output structure, and every known-limitations section reflect real classroom and curriculum design practice — not a reading of the literature.
 
 **Designed for orchestration from day one.**
 YAML schema headers, typed input and output fields, chaining metadata, and composable outputs are built into every skill. This is not a prompt collection with metadata bolted on. It is a skill library engineered for programmatic use.
@@ -123,23 +128,51 @@ Every skill opens with a machine-readable header. Here is a real example:
 
 ```yaml
 ---
-skill_id: memory-002
-skill_name: Spaced Practice Schedule Builder
-domain: Memory & Learning Science
-evidence_strength: strong
+skill_id: "memory-learning-science/spaced-practice-scheduler"
+skill_name: "Spaced Practice Schedule Builder"
+domain: "memory-learning-science"
+version: "1.0"
+evidence_strength: "strong"
 evidence_sources:
-  - "Cepeda et al. (2006) — Distributed practice in verbal recall tasks"
-  - "Kornell & Bjork (2008) — Learning concepts and categories"
-inputs:
-  topics: list[string]
-  timeline: string
-  sessions_per_week: integer
-outputs:
-  schedule: SpacedSchedule
-  retrieval_activities: list[RetrievalActivity]
-tags: [spacing, retrieval-practice, memory, schedule, cognitive-science]
-chaining:
-  outputs_to: [assessment-designer, lesson-sequence-planner]
+  - "Cepeda et al. (2006) — Meta-analysis of 254 studies on distributed practice"
+  - "Kornell & Bjork (2008) — Spacing and interleaving effects on learning"
+  - "Dunlosky et al. (2013) — Distributed practice rated high-utility learning strategy"
+input_schema:
+  required:
+    - field: "topics"
+      type: "array"
+      description: "List of topics or concepts to be spaced across the schedule"
+    - field: "timeline"
+      type: "string"
+      description: "Available teaching period (e.g. '6-week half-term')"
+    - field: "lessons_per_week"
+      type: "integer"
+      description: "Number of lessons per week for this subject"
+  optional:
+    - field: "assessment_date"
+      type: "string"
+      description: "From context engine: summative assessment date"
+    - field: "student_profiles"
+      type: "array"
+      description: "From context engine: class-level retention data from prior assessments"
+output_schema:
+  type: "object"
+  fields:
+    - field: "schedule"
+      type: "array"
+      description: "Week-by-week schedule of new teaching and spaced review slots"
+    - field: "review_activity_suggestions"
+      type: "array"
+      description: "Specific retrieval activities for each review slot"
+    - field: "teacher_guidance"
+      type: "string"
+      description: "Implementation guidance and how to handle gaps"
+chains_well_with:
+  - "retrieval-practice-generator"
+  - "formative-assessment-technique-selector"
+  - "interleaving-unit-planner"
+teacher_time: "5 minutes"
+tags: ["spacing", "memory", "planning", "forgetting-curve", "distributed-practice"]
 ---
 ```
 
