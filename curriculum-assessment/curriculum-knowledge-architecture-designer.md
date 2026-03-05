@@ -51,13 +51,13 @@ output_schema:
       description: "For each type: hierarchical prerequisite chains, horizontal conceptual hubs and lenses, or dispositional progression bands"
     - field: "mixed_architecture_notes"
       type: "string"
-      description: "Where types interact, overlap, or create tension in this specific curriculum"
+      description: "Where types interact, overlap, or create tension in this specific curriculum. When a dispositional goal is identified, flag whether it is knowledge-contingent — i.e. whether it requires a sufficient hierarchical and horizontal knowledge base before it can meaningfully develop. Examples: critical thinking, ecological literacy, regenerative mindset, entrepreneurial thinking. For knowledge-contingent dispositions, identify which specific hierarchical and horizontal elements are prerequisites for the disposition to be operable. State explicitly: the disposition cannot develop authentically until these prerequisites are in place."
     - field: "teaching_sequencing_implications"
       type: "string"
       description: "What the architecture means for content ordering and pacing"
     - field: "assessment_implications"
       type: "object"
-      description: "Which elements are auto-assessable vs require teacher judgment and why"
+      description: "Which elements are auto-assessable vs require teacher judgment and why. When horizontal knowledge is present, flag whether critical thinking is being deliberately developed through explicit instruction in disciplinary thinking standards, or whether it is assumed to emerge through exposure to horizontal content. Research (Bailin et al. 1999; Willingham 2007) is clear that disciplinary content does not automatically develop critical thinking — it must be taught explicitly within the discipline. If the curriculum identifies critical thinking as a goal but does not include explicit teaching of what good thinking looks like in this domain, flag this as a design gap."
     - field: "ai_tutoring_design_implications"
       type: "string"
       description: "How this architecture should inform an intelligent tutoring system or AI teacher assistant"
@@ -409,6 +409,8 @@ The AI system must recognise that this project requires transitions between know
 
 3. **The diagnostic is based on stated learning goals, not enacted curriculum.** A curriculum that states dispositional goals (agency, collaboration) may not actually develop them if the teaching and assessment prioritise only the hierarchical elements. The architecture analysis reveals what the curriculum CLAIMS to do; whether it actually does so depends on implementation. Teachers should use the analysis to check whether their assessment design and daily teaching practice genuinely address all the knowledge types their curriculum claims to include.
 
-4. **Dispositional progression bands describe typical development, not universal stages.** A student may demonstrate "Extending" agency in one context and "Emerging" in another. Dispositional development is context-sensitive and non-linear. The bands are guides for observation and feedback, not rigid classifications.
+4. **Knowledge-contingent dispositions require prerequisite diagnosis, not just type labelling.** Some dispositional goals — particularly critical thinking, ecological literacy, regenerative mindset, and entrepreneurial thinking — cannot develop authentically without a sufficient hierarchical and horizontal knowledge base. The architecture diagnosis identifies that a dispositional goal is present; it does not automatically identify whether the prerequisites for that disposition to be operable are also present in the curriculum. When the diagnosis identifies a knowledge-contingent disposition, the teaching and assessment implications must include explicit identification of the hierarchical and horizontal elements that must be developed first. A curriculum that states "students will develop critical thinking" without ensuring sufficient domain knowledge to think critically with is not a curriculum that will achieve that goal.
 
-5. **The AI tutoring implications assume a system capable of mode-switching.** Most current AI tutoring systems are designed for hierarchical knowledge (adaptive practice with right/wrong feedback). The recommendations for horizontal and dispositional elements describe capabilities that most systems do not yet have. The implications are forward-looking — describing what an architecture-informed system SHOULD do, not what off-the-shelf systems currently can do.
+5. **Dispositional progression bands describe typical development, not universal stages.** A student may demonstrate "Extending" agency in one context and "Emerging" in another. Dispositional development is context-sensitive and non-linear. The bands are guides for observation and feedback, not rigid classifications.
+
+6. **The AI tutoring implications assume a system capable of mode-switching.** Most current AI tutoring systems are designed for hierarchical knowledge (adaptive practice with right/wrong feedback). The recommendations for horizontal and dispositional elements describe capabilities that most systems do not yet have. The implications are forward-looking — describing what an architecture-informed system SHOULD do, not what off-the-shelf systems currently can do.

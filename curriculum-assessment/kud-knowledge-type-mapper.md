@@ -170,7 +170,7 @@ Step 3: For every Do element, make the Skill/Disposition split explicit.
 
 Step 4: Assign the assessment route for each element.
 
-Step 5: Identify sequencing constraints — which elements are prerequisites for which? Which can be taught in flexible order? Which dispositions run as continuous threads?
+Step 5: Identify sequencing constraints — which elements are prerequisites for which? Which can be taught in flexible order? Which dispositions run as continuous threads? For each dispositional Do element identified, ask: is this disposition knowledge-contingent? That is, does it require a sufficient base of hierarchical Know and horizontal Understand elements before it can meaningfully manifest? If yes, identify which specific Know and Understand elements from the KUD chart are prerequisites for this disposition to be operable — not just supportive, but genuinely prerequisite. Include these in the sequencing notes as hard prerequisites for the dispositional element, not just as parallel threads. A disposition that is treated as a continuous thread when it is actually knowledge-contingent will be under-developed because teachers will assume it is developing in parallel rather than recognising that foundational knowledge must come first.
 
 Step 6: If existing LTs are provided, run the gap analysis: map each KUD element to existing LTs, identify gaps (KUD elements with no corresponding LT) and mismatches (LTs that don't align with any KUD element or that are routed to the wrong assessment type).
 
