@@ -2,9 +2,9 @@
 
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 [![Last Commit](https://img.shields.io/github/last-commit/GarethManning/claude-education-skills)](https://github.com/GarethManning/claude-education-skills/commits/main)
-[![Skills](https://img.shields.io/badge/skills-100-blue)](https://github.com/GarethManning/claude-education-skills)
+[![Skills](https://img.shields.io/badge/skills-105-blue)](https://github.com/GarethManning/claude-education-skills)
 
-An open-source library of 100 evidence-based Claude skills for curriculum design, lesson planning, and assessment — usable today by any educator with access to Claude, and engineered for AI agent orchestration.
+An open-source library of 105 evidence-based Claude skills for curriculum design, lesson planning, and assessment — usable today by any educator with access to Claude, and engineered for AI agent orchestration.
 
 ---
 
@@ -60,7 +60,7 @@ No API key. No technical setup. No dependencies.
 
 **Claude returns:** A complete week-by-week schedule showing when to teach new content and when to revisit previous topics at expanding intervals — with specific retrieval activities for each review slot (not "review cells" but "draw and label the cell membrane from memory, then check against your notes"). The schedule follows Cepeda et al.'s (2006) meta-analysis on optimal spacing intervals, includes interleaving across topics, and comes with practical guidance on what to do when review reveals gaps.
 
-That is one skill. There are 100.
+That is one skill. There are 105.
 
 ---
 
@@ -98,9 +98,9 @@ YAML schema headers, typed input and output fields, chaining metadata, and compo
 | 4 | **Questioning, Discussion & Dialogue** | 4 | Socratic questioning, discussion protocols, dialogic teaching moves, hinge questions |
 | 5 | **Literacy, Writing & Critical Thinking** | 7 | Argument structure, disciplinary writing, reading comprehension, source evaluation, text complexity, media literacy, critical thinking |
 | 6 | **EAL/D & Language Development** | 5 | Language demand analysis, vocabulary tiering, scaffolded task modification, sentence frames, sheltered instruction |
-| 7 | **Curriculum Design & Assessment** | 9 | Backwards design, competency unpacking, rubric generation, assessment validity, formative assessment, differentiation, gap analysis, learning progressions, PBL |
+| 7 | **Curriculum Design & Assessment** | 12 | Backwards design, competency unpacking, rubric generation, assessment validity, formative assessment, differentiation, gap analysis, learning progressions, PBL |
 | 8 | **Wellbeing, Motivation & Student Agency** | 12 | Motivation diagnostics, self-efficacy, wellbeing-learning connections, agency scaffolds, belonging, and related practices |
-| 9 | **Professional Learning & Teacher Development** | 7 | Lesson observation, reflective practice, PD session design, data interpretation, and related practices |
+| 9 | **Professional Learning & Teacher Development** | 9 | Lesson observation, reflective practice, PD session design, data interpretation, and related practices |
 | 10 | **Global & Cross-Cultural Pedagogies** | 9 | Variation theory, CPA sequences, phenomenon-based learning, culturally responsive teaching, Ubuntu, place-based inquiry, Reggio documentation, emergent projects, cross-cultural validity |
 | 11 | **Environmental & Experiential Learning** | 6 | Outdoor learning, biophilic design, ecological inquiry, experiential learning cycles, interdisciplinary connections, service learning |
 | 12 | **AI Learning Science** | 14 | Adaptive hints, erroneous examples, digital worked examples, spacing algorithms, AI feedback, tutoring dialogue, learning analytics, collaborative learning, cognitive tutoring, self-explanation, metacognitive monitoring, productive failure, worked example transitions, formative assessment loops |
@@ -114,7 +114,7 @@ YAML schema headers, typed input and output fields, chaining metadata, and compo
 The library is Layer 1 of a three-layer system. See [ARCHITECTURE.md](ARCHITECTURE.md) for the full design.
 
 **Layer 1 — Skill Library** (this repository, complete and available now)
-100 skills across 14 domains. Each skill encodes a specific, evidence-grounded instructional or curriculum design decision. Works standalone today.
+105 skills across 14 domains. Each skill encodes a specific, evidence-grounded instructional or curriculum design decision. Works standalone today.
 
 **Layer 2 — Context Engine** *(in design)*
 Holds persistent information about students, classes, curriculum sequences, and assessment history. When connected, skill outputs become personalised — not generic advice about retrieval practice, but a specific retrieval schedule for this class based on what they have already learned and been assessed on.
@@ -182,7 +182,7 @@ An orchestrator calls `search_skills("retrieval practice")`, gets back candidate
 
 | Feature | Status |
 |---------|--------|
-| Layer 1 — Skill Library (100 skills) | ✅ Complete |
+| Layer 1 — Skill Library (105 skills) | ✅ Complete |
 | Layer 2 — Context Engine | 🔵 In design |
 | Layer 3 — Orchestrator | 🔵 In design |
 | MCP Server (list, get, search skills) | 🟡 Planned |
