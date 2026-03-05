@@ -319,8 +319,8 @@ as a System             │   ecosystem service valuation, development pressure
 |-------|----------------------|
 | **Emerging** | Participates when directed. Completes assigned tasks related to the wetland investigation. Relies on teacher to define problems and next steps. Shows interest but waits for instruction before acting. |
 | **Developing** | Identifies problems or opportunities independently: "I noticed the water is discoloured near the drain outlet — we should test there." Takes initiative on specific tasks within the project. Begins to express ownership: "our wetland" rather than "the wetland." |
-| **Extending** | Drives investigation forward without prompting. Makes decisions about what to investigate next and justifies them. Takes responsibility for project outcomes: "Our data wasn't reliable enough — we need to recalibrate and resample." Seeks out information and resources independently. |
-| **Competent** | Acts as a steward: connects the project to longer-term action beyond the classroom. Contacts community stakeholders independently. Identifies what the project cannot address and what should happen next. Demonstrates sustained commitment to the place beyond the project timeline. |
+| **Competent** | Drives investigation forward without prompting. Makes decisions about what to investigate next and justifies them. Takes responsibility for project outcomes: "Our data wasn't reliable enough — we need to recalibrate and resample." Seeks out information and resources independently. |
+| **Extending** | Acts as a steward: connects the project to longer-term action beyond the classroom. Contacts community stakeholders independently. Identifies what the project cannot address and what should happen next. Demonstrates sustained commitment to the place beyond the project timeline. |
 
 **Competency 2: Collaboration**
 
@@ -328,8 +328,8 @@ as a System             │   ecosystem service valuation, development pressure
 |-------|----------------------|
 | **Emerging** | Works alongside others. Shares materials and space. Contributes when asked. May default to working alone or dividing tasks to avoid genuine interaction. |
 | **Developing** | Coordinates effectively: divides tasks based on strengths, meets deadlines, communicates progress. Listens to others' ideas and incorporates them. Resolves minor disagreements without teacher intervention. |
-| **Extending** | Co-constructs ideas: builds on others' contributions to produce something no individual could create alone. Actively seeks out perspectives different from their own. Adjusts their approach based on what the team needs — sometimes leading, sometimes supporting. |
-| **Competent** | Facilitates group thinking: draws out quieter members, synthesises diverse viewpoints, navigates genuine disagreement productively. Reflects on and articulates how the collaboration shaped the outcome: "We wouldn't have seen the connection between the drainage pattern and the algae bloom if Priya hadn't suggested mapping both datasets together." |
+| **Competent** | Co-constructs ideas: builds on others' contributions to produce something no individual could create alone. Actively seeks out perspectives different from their own. Adjusts their approach based on what the team needs — sometimes leading, sometimes supporting. |
+| **Extending** | Facilitates group thinking: draws out quieter members, synthesises diverse viewpoints, navigates genuine disagreement productively. Reflects on and articulates how the collaboration shaped the outcome: "We wouldn't have seen the connection between the drainage pattern and the algae bloom if Priya hadn't suggested mapping both datasets together." |
 
 **Competency 3: Regenerative Mindset**
 
@@ -337,8 +337,8 @@ as a System             │   ecosystem service valuation, development pressure
 |-------|----------------------|
 | **Emerging** | Understands that the wetland is damaged and that humans caused the damage. Frames the problem as "fixing what's broken" — a deficit orientation. |
 | **Developing** | Begins to see the wetland as a living system with its own capacity for recovery. Shifts from "fixing" to "supporting recovery." Asks questions about what the wetland needs rather than only what humans want from it. |
-| **Extending** | Designs proposals that work with ecological processes rather than imposing human solutions. Considers the wetland's needs alongside human needs. Recognises that regeneration is ongoing, not a one-time fix. |
-| **Competent** | Articulates a regenerative philosophy: understands that humans are part of the system, not separate from it. Proposes solutions that create conditions for the system to regenerate itself. Connects the specific wetland project to broader patterns of ecological degradation and regeneration. |
+| **Competent** | Designs proposals that work with ecological processes rather than imposing human solutions. Considers the wetland's needs alongside human needs. Recognises that regeneration is ongoing, not a one-time fix. |
+| **Extending** | Articulates a regenerative philosophy: understands that humans are part of the system, not separate from it. Proposes solutions that create conditions for the system to regenerate itself. Connects the specific wetland project to broader patterns of ecological degradation and regeneration. |
 
 ### 3. Mixed Architecture Notes
 
