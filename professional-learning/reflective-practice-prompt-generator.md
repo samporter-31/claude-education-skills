@@ -51,6 +51,7 @@ chains_well_with:
   - "lesson-observation-protocol-designer"
   - "teacher-inquiry-cycle-designer"
   - "lesson-study-cycle-designer"
+  - "pedagogical-content-knowledge-developer"
 teacher_time: "2 minutes"
 tags: ["reflection", "Schön", "Timperley", "reflective-practice", "professional-learning", "journaling"]
 ---

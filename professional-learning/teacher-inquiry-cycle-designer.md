@@ -55,6 +55,7 @@ chains_well_with:
   - "instructional-coaching-conversation-guide"
   - "professional-development-session-designer"
   - "pedagogical-content-knowledge-developer"
+  - "technological-pedagogical-content-knowledge-developer"
 teacher_time: "4 minutes"
 tags: ["inquiry", "Timperley", "practitioner-research", "action-research", "data-informed", "professional-learning"]
 ---

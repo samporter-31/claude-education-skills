@@ -61,6 +61,7 @@ chains_well_with:
   - "self-determined-project-design-protocol"
   - "curriculum-knowledge-architecture-designer"
   - "kud-knowledge-type-mapper"
+  - "critical-thinking-task-designer"
 teacher_time: "5 minutes"
 tags: ["learning-targets", "Manning", "competency", "authoring", "backwards-design", "observable-verbs", "band-statements", "progression"]
 ---

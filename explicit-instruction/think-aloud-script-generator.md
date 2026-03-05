@@ -55,6 +55,7 @@ chains_well_with:
   - "metacognitive-prompt-library"
   - "reading-comprehension-strategy-selector"
   - "pedagogical-content-knowledge-developer"
+  - "critical-thinking-task-designer"
 teacher_time: "4 minutes"
 tags: ["think-aloud", "modelling", "expert-thinking", "cognitive-apprenticeship", "comprehension"]
 ---

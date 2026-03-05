@@ -55,6 +55,7 @@ chains_well_with:
   - "academic-language-sentence-frame-generator"
   - "text-complexity-analyser"
   - "pedagogical-content-knowledge-developer"
+  - "critical-thinking-task-designer"
 teacher_time: "3 minutes"
 tags: ["disciplinary-literacy", "writing", "genre-pedagogy", "scaffold", "academic-language"]
 ---

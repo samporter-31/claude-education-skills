@@ -55,6 +55,7 @@ chains_well_with:
   - "reflective-practice-prompt-generator"
   - "explicit-instruction-sequence-builder"
   - "pedagogical-content-knowledge-developer"
+  - "technological-pedagogical-content-knowledge-developer"
 teacher_time: "3 minutes"
 tags: ["observation", "look-fors", "feedback", "professional-development", "evidence-based"]
 ---
