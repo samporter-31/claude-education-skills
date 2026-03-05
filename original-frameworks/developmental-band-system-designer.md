@@ -58,6 +58,7 @@ chains_well_with:
   - "self-determined-project-design-protocol"
   - "curriculum-knowledge-architecture-designer"
   - "kud-knowledge-type-mapper"
+  - "scope-and-sequence-designer"
 teacher_time: "6 minutes"
 tags: ["developmental-bands", "competency", "Manning", "curriculum-design", "Piaget", "backwards-design", "mixed-age", "band-system"]
 ---

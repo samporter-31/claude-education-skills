@@ -53,6 +53,7 @@ chains_well_with:
   - "formative-assessment-technique-selector"
   - "curriculum-knowledge-architecture-designer"
   - "kud-knowledge-type-mapper"
+  - "scope-and-sequence-designer"
 teacher_time: "3 minutes"
 tags: ["competency", "standards", "success-criteria", "unpacking", "curriculum"]
 ---

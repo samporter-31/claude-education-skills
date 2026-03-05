@@ -52,6 +52,7 @@ chains_well_with:
   - "practice-problem-sequence-designer"
   - "backwards-design-unit-planner"
   - "curriculum-knowledge-architecture-designer"
+  - "scope-and-sequence-designer"
 teacher_time: "4 minutes"
 tags: ["learning-progressions", "trajectories", "prerequisites", "diagnostic", "curriculum-mapping"]
 ---

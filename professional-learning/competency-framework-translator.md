@@ -55,6 +55,7 @@ chains_well_with:
   - "backwards-design-unit-planner"
   - "project-brief-designer"
   - "curriculum-knowledge-architecture-designer"
+  - "scope-and-sequence-designer"
 teacher_time: "4 minutes"
 tags: ["competency-frameworks", "DigComp", "GreenComp", "ISTE", "UNESCO-AI", "translation", "observable-indicators"]
 ---

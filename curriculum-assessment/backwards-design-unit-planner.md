@@ -57,6 +57,7 @@ chains_well_with:
   - "curriculum-knowledge-architecture-designer"
   - "kud-knowledge-type-mapper"
   - "critical-thinking-task-designer"
+  - "scope-and-sequence-designer"
 teacher_time: "5 minutes"
 tags: ["UbD", "backwards-design", "unit-planning", "curriculum", "alignment"]
 ---

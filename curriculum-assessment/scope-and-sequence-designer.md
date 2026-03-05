@@ -62,6 +62,8 @@ chains_well_with:
   - "developmental-band-system-designer"
   - "backwards-design-unit-planner"
   - "competency-unpacker"
+  - "learning-progression-builder"
+  - "gap-analysis-from-student-work"
 teacher_time: "15 minutes"
 tags: ["scope-and-sequence", "curriculum-coherence", "vertical-coherence", "learning-progressions", "programme-design", "Bruner", "spiral-curriculum", "knowledge-types"]
 ---
