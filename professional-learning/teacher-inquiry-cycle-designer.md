@@ -54,6 +54,7 @@ chains_well_with:
   - "lesson-study-cycle-designer"
   - "instructional-coaching-conversation-guide"
   - "professional-development-session-designer"
+  - "pedagogical-content-knowledge-developer"
 teacher_time: "4 minutes"
 tags: ["inquiry", "Timperley", "practitioner-research", "action-research", "data-informed", "professional-learning"]
 ---

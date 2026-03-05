@@ -54,6 +54,7 @@ chains_well_with:
   - "intelligent-tutoring-dialogue-designer"
   - "formative-assessment-loop-designer"
   - "worked-example-to-problem-solving-transition-designer"
+  - "technological-pedagogical-content-knowledge-developer"
 teacher_time: "6 minutes"
 tags: ["cognitive-tutor", "ACT-R", "Anderson", "knowledge-tracing", "Corbett", "mastery", "ITS", "adaptive"]
 ---

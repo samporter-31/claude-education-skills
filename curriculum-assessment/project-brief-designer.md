@@ -64,6 +64,8 @@ chains_well_with:
   - "criterion-referenced-rubric-generator"
   - "differentiation-adapter"
   - "scaffolded-task-modifier"
+  - "curriculum-knowledge-architecture-designer"
+  - "critical-thinking-task-designer"
 teacher_time: "5 minutes"
 tags: ["PBL", "project-based-learning", "inquiry", "driving-question", "authentic-assessment", "milestones"]
 ---

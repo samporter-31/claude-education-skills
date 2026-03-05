@@ -54,6 +54,7 @@ chains_well_with:
   - "checking-for-understanding-protocol-designer"
   - "exit-ticket-designer"
   - "explicit-instruction-sequence-builder"
+  - "kud-knowledge-type-mapper"
 teacher_time: "2 minutes"
 tags: ["formative-assessment", "checking-understanding", "AfL", "feedback", "responsive-teaching"]
 ---

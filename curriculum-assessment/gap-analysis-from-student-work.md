@@ -54,6 +54,7 @@ chains_well_with:
   - "criterion-referenced-rubric-generator"
   - "error-analysis-protocol"
   - "practice-problem-sequence-designer"
+  - "kud-knowledge-type-mapper"
 teacher_time: "3 minutes"
 tags: ["gap-analysis", "student-work", "formative-assessment", "feedback", "diagnostic"]
 ---

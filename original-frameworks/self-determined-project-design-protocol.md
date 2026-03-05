@@ -64,6 +64,7 @@ chains_well_with:
   - "coherent-rubric-logic-builder"
   - "developmental-band-system-designer"
   - "self-regulated-learning-designer"
+  - "curriculum-knowledge-architecture-designer"
 teacher_time: "6 minutes"
 tags: ["self-determined", "project", "Manning", "mentoring", "SRL", "Zimmerman", "Bandura", "feasibility", "deliberate-practice", "tracking"]
 ---

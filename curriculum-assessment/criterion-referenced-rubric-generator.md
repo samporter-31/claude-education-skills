@@ -54,6 +54,7 @@ chains_well_with:
   - "backwards-design-unit-planner"
   - "gap-analysis-from-student-work"
   - "feedback-quality-analyser"
+  - "kud-knowledge-type-mapper"
 teacher_time: "3 minutes"
 tags: ["rubric", "assessment", "criteria", "descriptive-language", "formative-assessment"]
 ---

@@ -54,6 +54,7 @@ chains_well_with:
   - "worked-example-fading-designer"
   - "metacognitive-prompt-library"
   - "reading-comprehension-strategy-selector"
+  - "pedagogical-content-knowledge-developer"
 teacher_time: "4 minutes"
 tags: ["think-aloud", "modelling", "expert-thinking", "cognitive-apprenticeship", "comprehension"]
 ---

@@ -51,6 +51,8 @@ chains_well_with:
   - "criterion-referenced-rubric-generator"
   - "learning-progression-builder"
   - "formative-assessment-technique-selector"
+  - "curriculum-knowledge-architecture-designer"
+  - "kud-knowledge-type-mapper"
 teacher_time: "3 minutes"
 tags: ["competency", "standards", "success-criteria", "unpacking", "curriculum"]
 ---

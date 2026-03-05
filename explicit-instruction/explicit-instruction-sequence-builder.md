@@ -57,6 +57,7 @@ chains_well_with:
   - "worked-example-fading-designer"
   - "think-aloud-script-generator"
   - "practice-problem-sequence-designer"
+  - "pedagogical-content-knowledge-developer"
 teacher_time: "5 minutes"
 tags: ["explicit-instruction", "gradual-release", "modelling", "direct-instruction", "scaffolding"]
 ---

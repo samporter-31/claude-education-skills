@@ -54,6 +54,7 @@ chains_well_with:
   - "worked-example-fading-designer"
   - "explicit-instruction-sequence-builder"
   - "diagnostic-question-generator"
+  - "pedagogical-content-knowledge-developer"
 teacher_time: "4 minutes"
 tags: ["CPA", "Singapore-maths", "Bruner", "manipulatives", "bar-model", "concreteness-fading", "mathematics"]
 ---

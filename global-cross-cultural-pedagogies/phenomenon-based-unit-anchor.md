@@ -57,6 +57,7 @@ chains_well_with:
   - "culturally-responsive-teaching-designer"
   - "place-based-inquiry-anchor"
   - "agency-scaffold-generator"
+  - "curriculum-knowledge-architecture-designer"
 teacher_time: "5 minutes"
 tags: ["phenomenon-based-learning", "Finland", "POPS-2016", "Lonka", "cross-curricular", "interdisciplinary", "transversal-competences"]
 ---

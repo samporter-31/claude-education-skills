@@ -57,6 +57,7 @@ chains_well_with:
   - "place-based-inquiry-anchor"
   - "phenomenon-based-unit-anchor"
   - "biophilic-learning-environment-designer"
+  - "critical-thinking-task-designer"
 teacher_time: "4 minutes"
 tags: ["ecological-literacy", "Sobel", "Orr", "place-based", "environmental-education", "inquiry", "stewardship"]
 ---

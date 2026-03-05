@@ -51,6 +51,7 @@ chains_well_with:
   - "formative-assessment-technique-selector"
   - "practice-problem-sequence-designer"
   - "backwards-design-unit-planner"
+  - "curriculum-knowledge-architecture-designer"
 teacher_time: "4 minutes"
 tags: ["learning-progressions", "trajectories", "prerequisites", "diagnostic", "curriculum-mapping"]
 ---

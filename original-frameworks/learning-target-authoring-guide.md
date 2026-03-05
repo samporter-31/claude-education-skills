@@ -59,6 +59,8 @@ chains_well_with:
   - "developmental-band-system-designer"
   - "coherent-rubric-logic-builder"
   - "self-determined-project-design-protocol"
+  - "curriculum-knowledge-architecture-designer"
+  - "kud-knowledge-type-mapper"
 teacher_time: "5 minutes"
 tags: ["learning-targets", "Manning", "competency", "authoring", "backwards-design", "observable-verbs", "band-statements", "progression"]
 ---

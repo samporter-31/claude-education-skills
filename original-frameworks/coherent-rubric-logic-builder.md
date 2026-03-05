@@ -54,6 +54,8 @@ chains_well_with:
   - "developmental-band-system-designer"
   - "self-determined-project-design-protocol"
   - "ai-feedback-design-principles"
+  - "curriculum-knowledge-architecture-designer"
+  - "kud-knowledge-type-mapper"
 teacher_time: "5 minutes"
 tags: ["rubric", "Manning", "competency", "five-level", "co-construction", "Sadler", "formative", "Competent", "assessment"]
 ---

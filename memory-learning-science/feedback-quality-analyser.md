@@ -48,6 +48,7 @@ chains_well_with:
   - "criterion-referenced-rubric-generator"
   - "self-regulation-scaffold-generator"
   - "metacognitive-prompt-library"
+  - "kud-knowledge-type-mapper"
 teacher_time: "3 minutes"
 tags: ["feedback", "formative-assessment", "metacognition", "writing", "assessment"]
 ---

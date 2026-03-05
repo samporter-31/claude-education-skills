@@ -57,6 +57,8 @@ chains_well_with:
   - "lesson-study-cycle-designer"
   - "teacher-inquiry-cycle-designer"
   - "reflective-practice-prompt-generator"
+  - "pedagogical-content-knowledge-developer"
+  - "technological-pedagogical-content-knowledge-developer"
 teacher_time: "4 minutes"
 tags: ["CPD", "professional-development", "Timperley", "adult-learning", "INSET", "staff-training"]
 ---

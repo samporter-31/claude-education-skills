@@ -64,6 +64,7 @@ chains_well_with:
   - "reggio-documentation-protocol"
   - "ecological-inquiry-anchor-designer"
   - "ubuntu-collective-knowledge-task-designer"
+  - "critical-thinking-task-designer"
 teacher_time: "6 minutes"
 tags: ["SEEDS", "regenerative", "inquiry", "place-based", "Manning", "bio-empathy", "stewardship", "cyclical", "documentation"]
 ---

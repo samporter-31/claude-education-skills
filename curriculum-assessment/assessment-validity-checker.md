@@ -54,6 +54,8 @@ chains_well_with:
   - "formative-assessment-technique-selector"
   - "competency-unpacker"
   - "backwards-design-unit-planner"
+  - "curriculum-knowledge-architecture-designer"
+  - "kud-knowledge-type-mapper"
 teacher_time: "3 minutes"
 tags: ["validity", "reliability", "assessment-design", "quality-assurance", "measurement"]
 ---

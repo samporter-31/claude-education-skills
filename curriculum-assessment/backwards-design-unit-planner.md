@@ -54,6 +54,8 @@ chains_well_with:
   - "criterion-referenced-rubric-generator"
   - "formative-assessment-technique-selector"
   - "explicit-instruction-sequence-builder"
+  - "curriculum-knowledge-architecture-designer"
+  - "kud-knowledge-type-mapper"
 teacher_time: "5 minutes"
 tags: ["UbD", "backwards-design", "unit-planning", "curriculum", "alignment"]
 ---

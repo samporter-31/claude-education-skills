@@ -56,6 +56,8 @@ chains_well_with:
   - "learning-target-authoring-guide"
   - "coherent-rubric-logic-builder"
   - "self-determined-project-design-protocol"
+  - "curriculum-knowledge-architecture-designer"
+  - "kud-knowledge-type-mapper"
 teacher_time: "6 minutes"
 tags: ["developmental-bands", "competency", "Manning", "curriculum-design", "Piaget", "backwards-design", "mixed-age", "band-system"]
 ---

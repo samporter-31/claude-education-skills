@@ -51,6 +51,7 @@ chains_well_with:
   - "worked-example-fading-designer"
   - "cpa-sequence-designer"
   - "diagnostic-question-generator"
+  - "curriculum-knowledge-architecture-designer"
 teacher_time: "3 minutes"
 tags: ["variation-theory", "Marton", "discernment", "contrast", "critical-features", "Hong-Kong", "Sweden", "mathematics-education"]
 ---

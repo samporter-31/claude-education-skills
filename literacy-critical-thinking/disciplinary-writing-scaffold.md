@@ -54,6 +54,7 @@ chains_well_with:
   - "vocabulary-tiering-tool"
   - "academic-language-sentence-frame-generator"
   - "text-complexity-analyser"
+  - "pedagogical-content-knowledge-developer"
 teacher_time: "3 minutes"
 tags: ["disciplinary-literacy", "writing", "genre-pedagogy", "scaffold", "academic-language"]
 ---

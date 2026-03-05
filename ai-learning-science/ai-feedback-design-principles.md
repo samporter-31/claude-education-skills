@@ -51,6 +51,7 @@ chains_well_with:
   - "formative-assessment-loop-designer"
   - "intelligent-tutoring-dialogue-designer"
   - "self-explanation-prompt-designer"
+  - "technological-pedagogical-content-knowledge-developer"
 teacher_time: "4 minutes"
 tags: ["feedback", "AI-feedback", "formative", "Shute", "Narciss", "Hattie", "LLM", "automated-feedback"]
 ---

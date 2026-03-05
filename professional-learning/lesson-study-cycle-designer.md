@@ -57,6 +57,7 @@ chains_well_with:
   - "lesson-observation-protocol-designer"
   - "reflective-practice-prompt-generator"
   - "teacher-inquiry-cycle-designer"
+  - "pedagogical-content-knowledge-developer"
 teacher_time: "5 minutes"
 tags: ["lesson-study", "jugyou-kenkyuu", "collaborative-planning", "research-lesson", "professional-learning"]
 ---

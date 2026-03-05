@@ -72,6 +72,7 @@ chains_well_with:
   - "coherent-rubric-logic-builder"
   - "developmental-band-system-designer"
   - "curriculum-knowledge-architecture-designer"
+  - "kud-knowledge-type-mapper"
 teacher_time: "5 minutes"
 tags: ["dispositional-knowledge", "assessment", "multi-informant", "coaching-feedback", "developmental-bands", "agency", "collaboration", "self-regulation", "observation", "self-reflection"]
 ---
