@@ -2,7 +2,7 @@
   "name": "claude-education-skills-mcp",
   "version": "0.1.0",
   "description": "MCP server exposing the Claude Education Skills library as callable tools",
-  "license": "MIT",
+  "license": "CC-BY-SA-4.0",
   "type": "module",
   "main": "dist/index.js",
   "scripts": {

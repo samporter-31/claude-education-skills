@@ -92,6 +92,4 @@ npm run bundle-skills # Re-generate src/skills.json for Vercel deployment
 
 ## Licence
 
-MIT — see [LICENSE](LICENSE).
-
-The skill content in the parent repository is licensed under CC BY-SA 4.0.
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) — see [LICENSE](LICENSE).
