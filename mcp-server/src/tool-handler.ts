@@ -2,7 +2,7 @@ import type { LoadedSkill } from "./types.js";
 
 type ToolResult = { content: Array<{ type: "text"; text: string }> };
 
-function assemblePrompt(skill: LoadedSkill, args: Record<string, unknown>): string {
+export function assemblePrompt(skill: LoadedSkill, args: Record<string, unknown>): string {
   let prompt = skill.prompt;
 
   // Replace {{placeholder}} tokens with provided values
@@ -11,6 +11,9 @@ function assemblePrompt(skill: LoadedSkill, args: Record<string, unknown>): stri
     const strValue = Array.isArray(value) ? JSON.stringify(value) : String(value);
     prompt = prompt.replace(placeholder, strValue);
   }
+
+  // Strip any remaining {{placeholders}} for optional params not provided
+  prompt = prompt.replace(/\{\{[^}]+\}\}/g, "[not provided]");
 
   // Build an input summary for any placeholders that weren't in the template
   // (some prompts use different placeholder conventions)
@@ -23,31 +26,6 @@ function assemblePrompt(skill: LoadedSkill, args: Record<string, unknown>): stri
     .join("\n");
 
   return `${prompt}\n\n---\n\n## Teacher Input\n\n${inputSummary}`;
-}
-
-export function handleSkillCall(
-  skills: Map<string, LoadedSkill>,
-  toolName: string,
-  args: Record<string, unknown>,
-): ToolResult {
-  const skill = skills.get(toolName);
-  if (!skill) {
-    return { content: [{ type: "text", text: `Unknown skill tool: ${toolName}` }] };
-  }
-
-  // Validate required fields
-  const missing = skill.metadata.input_schema.required
-    .filter((f) => !(f.field in args) || args[f.field] === "" || args[f.field] === null)
-    .map((f) => f.field);
-
-  if (missing.length > 0) {
-    return {
-      content: [{ type: "text", text: `Missing required fields: ${missing.join(", ")}` }],
-    };
-  }
-
-  const assembled = assemblePrompt(skill, args);
-  return { content: [{ type: "text", text: assembled }] };
 }
 
 export function handleListSkills(

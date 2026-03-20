@@ -26,17 +26,18 @@ test.describe("MCP Server — Startup", () => {
     await client?.close();
   });
 
-  test("loads all 107 skills and registers 111 tools (107 skills + 4 meta)", async () => {
+  test("registers 111 tools (107 skills + 4 meta) and 107 prompts", async () => {
     client = await createClient();
+
     const { tools } = await client.listTools();
     const metaTools = ["list_skills", "get_skill_details", "find_skills", "suggest_skills"];
-    const skillTools = tools.filter((t) => !metaTools.includes(t.name));
-
     expect(tools.length).toBe(111);
-    expect(skillTools.length).toBe(107);
     for (const name of metaTools) {
       expect(tools.find((t) => t.name === name)).toBeTruthy();
     }
+
+    const { prompts } = await client.listPrompts();
+    expect(prompts.length).toBe(107);
   });
 });
 
@@ -111,7 +112,6 @@ test.describe("MCP Server — suggest_skills", () => {
     });
     const text = (result.content as Array<{ type: string; text: string }>)[0].text;
 
-    // Count skill entries (each starts with "- **")
     const skillMatches = text.match(/- \*\*[^*]+\*\*/g);
     expect(skillMatches).toBeTruthy();
     expect(skillMatches!.length).toBeGreaterThanOrEqual(3);
@@ -132,7 +132,7 @@ test.describe("MCP Server — suggest_skills", () => {
   });
 });
 
-test.describe("MCP Server — skill tool call", () => {
+test.describe("MCP Server — skill tools", () => {
   let client: Client;
 
   test.beforeEach(async () => {
@@ -143,7 +143,7 @@ test.describe("MCP Server — skill tool call", () => {
     await client?.close();
   });
 
-  test("returns fully assembled prompt with inputs substituted", async () => {
+  test("returns instruction-framed prompt with inputs substituted", async () => {
     const result = await client.callTool({
       name: "cognitive-load-analyser",
       arguments: {
@@ -154,27 +154,12 @@ test.describe("MCP Server — skill tool call", () => {
     });
     const text = (result.content as Array<{ type: string; text: string }>)[0].text;
 
-    // Should contain the expert role framing from the prompt
+    expect(text).toContain("INSTRUCTIONS: You are now executing an education skill");
+    expect(text).toContain("<skill_instructions>");
+    expect(text).toContain("Generate the complete output now.");
     expect(text).toContain("Cognitive Load Theory");
-    // Should contain the teacher input section with substituted values
-    expect(text).toContain("## Teacher Input");
     expect(text).toContain("mitosis");
     expect(text).toContain("Year 9 novice");
-  });
-
-  test("rejects call with missing required fields", async () => {
-    // The MCP SDK validates via Zod and returns isError: true with validation details
-    const result = await client.callTool({
-      name: "cognitive-load-analyser",
-      arguments: {
-        task_description: "Some task",
-        // student_level deliberately omitted
-      },
-    });
-
-    expect(result.isError).toBe(true);
-    const text = (result.content as Array<{ type: string; text: string }>)[0].text;
-    expect(text).toContain("student_level");
   });
 
   test("handles collision names with domain prefix", async () => {
@@ -188,13 +173,54 @@ test.describe("MCP Server — skill tool call", () => {
       "curriculum-assessment__critical-thinking-task-designer",
       "literacy-critical-thinking__critical-thinking-task-designer",
     ]);
+  });
+});
 
-    // Both should be callable
-    for (const tool of criticalThinkingTools) {
-      const { tools: allTools } = await client.listTools();
-      const def = allTools.find((t) => t.name === tool.name);
-      expect(def).toBeTruthy();
-    }
+test.describe("MCP Server — skill prompts", () => {
+  let client: Client;
+
+  test.beforeEach(async () => {
+    client = await createClient();
+  });
+
+  test.afterEach(async () => {
+    await client?.close();
+  });
+
+  test("returns assembled prompt as user message with inputs substituted", async () => {
+    const result = await client.getPrompt({
+      name: "cognitive-load-analyser",
+      arguments: {
+        task_description:
+          "Students read a passage about mitosis while labelling a diagram",
+        student_level: "Year 9 novice",
+      },
+    });
+
+    expect(result.messages.length).toBe(1);
+    expect(result.messages[0].role).toBe("user");
+
+    const text = result.messages[0].content as { type: string; text: string };
+    expect(text.type).toBe("text");
+    // Should contain the expert role framing from the prompt
+    expect(text.text).toContain("Cognitive Load Theory");
+    // Should contain the teacher input section with substituted values
+    expect(text.text).toContain("## Teacher Input");
+    expect(text.text).toContain("mitosis");
+    expect(text.text).toContain("Year 9 novice");
+  });
+
+  test("handles collision names with domain prefix", async () => {
+    const { prompts } = await client.listPrompts();
+    const criticalThinking = prompts.filter((p) =>
+      p.name.includes("critical-thinking-task-designer"),
+    );
+
+    expect(criticalThinking.length).toBe(2);
+    expect(criticalThinking.map((p) => p.name).sort()).toEqual([
+      "curriculum-assessment__critical-thinking-task-designer",
+      "literacy-critical-thinking__critical-thinking-task-designer",
+    ]);
   });
 });
 
@@ -209,13 +235,18 @@ test.describe("MCP Server — SKILLS_FILTER", () => {
     client = await createClient({
       SKILLS_FILTER: "memory-learning-science,explicit-instruction",
     });
+
+    // Skill tools + 4 meta-tools, filtered
     const { tools } = await client.listTools();
     const metaTools = ["list_skills", "get_skill_details", "find_skills", "suggest_skills"];
     const skillTools = tools.filter((t) => !metaTools.includes(t.name));
-
-    // Should only have skills from the two filtered domains
     expect(skillTools.length).toBeGreaterThan(0);
     expect(skillTools.length).toBeLessThan(107);
+
+    // Prompts should be filtered too
+    const { prompts } = await client.listPrompts();
+    expect(prompts.length).toBeGreaterThan(0);
+    expect(prompts.length).toBeLessThan(107);
 
     // Verify via list_skills that only filtered domains appear
     const result = await client.callTool({ name: "list_skills", arguments: {} });

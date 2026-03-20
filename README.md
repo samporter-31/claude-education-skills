@@ -12,7 +12,7 @@ An open-source library of 106 evidence-based Claude skills for curriculum design
 No setup required. Copy a prompt, paste into Claude, get structured output.
 
 **🛠️ I'm a developer or AI builder — [start here →](#architecture)**
-YAML schemas, typed inputs and outputs, chaining metadata, MCP server roadmap.
+YAML schemas, typed inputs and outputs, chaining metadata, [live MCP server](#mcp-server).
 
 ---
 
@@ -178,14 +178,39 @@ tags: ["spacing", "memory", "planning", "forgetting-curve", "distributed-practic
 
 An orchestrator calls `search_skills("retrieval practice")`, gets back candidates, calls `get_skill` on the best match, and injects the prompt into its workflow.
 
+### MCP Server
+
+The skill library is available as a live MCP server. Any MCP-compatible client can discover, search, and invoke all 107 skills programmatically.
+
+**Production URL:** `https://mcp-server-sigma-sooty.vercel.app/mcp`
+
+Connect from Claude.ai by adding the URL under **Integrations > MCP Servers**. Connect from Claude Desktop:
+
+```json
+{
+  "mcpServers": {
+    "education-skills": {
+      "type": "streamable-http",
+      "url": "https://mcp-server-sigma-sooty.vercel.app/mcp"
+    }
+  }
+}
+```
+
+The server exposes:
+- **111 tools** (107 skills + 4 discovery tools: `list_skills`, `find_skills`, `suggest_skills`, `get_skill_details`)
+- **107 prompts** (for clients that surface MCP prompts)
+
+Source code, local setup, and development instructions: [`mcp-server/`](mcp-server/)
+
 ### Roadmap
 
 | Feature | Status |
 |---------|--------|
-| Layer 1 — Skill Library (106 skills) | ✅ Complete |
+| Layer 1 — Skill Library (107 skills) | ✅ Complete |
+| MCP Server (111 tools, live) | ✅ Complete |
 | Layer 2 — Context Engine | 🔵 In design |
 | Layer 3 — Orchestrator | 🔵 In design |
-| MCP Server (list, get, search skills) | 🟡 Planned |
 
 ---
 

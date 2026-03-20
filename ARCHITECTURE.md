@@ -67,9 +67,13 @@ The `chains_well_with` field in every skill's YAML header provides explicit chai
 
 ## MCP Server
 
-An MCP (Model Context Protocol) server that exposes the full skill library as callable Claude tools is in development. This will allow skills to be invoked directly by AI agents and Claude Code workflows — removing the manual copy-paste step entirely and making the library natively accessible to any orchestration system that supports MCP.
+An MCP server exposes the full skill library as callable tools and prompts. Any MCP-compatible client can discover all 107 skills, read their input requirements, call them with structured parameters, and receive typed outputs — removing the manual copy-paste step entirely.
 
-When complete, any MCP-compatible client will be able to discover all 100 skills, read their input requirements, call them with structured parameters, and receive typed outputs. Contributors building orchestration systems, tutoring platforms, or curriculum tools should watch for this.
+**Production URL:** `https://mcp-server-sigma-sooty.vercel.app/mcp`
+
+The server registers each skill twice — as an MCP tool (for Claude.ai and orchestrator use) and as an MCP prompt (for clients that surface prompts in their UI). Four meta-tools provide discovery: `list_skills`, `find_skills`, `suggest_skills`, and `get_skill_details`.
+
+Source code and setup instructions: [`mcp-server/`](mcp-server/)
 
 ---
 
